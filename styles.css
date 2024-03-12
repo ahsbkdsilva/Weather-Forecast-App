@@ -5,13 +5,13 @@
     box-sizing: border-box;
 }
 body{
-    background: #222;
+    background: #1bb3ce;
 }
 .card{
     width: 90%;
     max-width: 470px;
-    background: linear-gradient(135deg,#c7fe00,#cc8e46);
-    color: #986262;
+    background: linear-gradient(135deg,#87abc0,#96cdf1);
+    color: #210505;
     margin: 100px auto 0;
     border-radius: 20px;
     padding: 40px 35px;
@@ -26,7 +26,7 @@ body{
 .search input{
     border: 0;
     outline: 0;
-    background:#ebfffc;
+    background:#81d8cb;
     color: #555;
     padding: 10px 25px;
     height: 60px;
@@ -38,7 +38,7 @@ body{
 .search button{
     border: 0;
     outline: 0;
-    background: #ebfffc;
+    background: #81d8cb;
     border-radius: 50%;
     width: 60px;
     height: 60px;
@@ -93,54 +93,116 @@ body{
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #000701;
+    background-color: #e6f5e6;
     margin: 0;
     padding: 0;
 }
 
-.login-container {
+.form {
     width: 300px;
-    margin: 100px auto;
+    height: 450px;
+    background: linear-gradient(to top, #0f0f0f 50%, #0f0f0f 50%);
+    position: absolute;
+    top: 10px;
+    left: 400px;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.form h2 {
+    width: 220px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: #ff7200;
+    font-size: 22px;
     background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 2px;
+    padding: 8px;
 }
 
-h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-input {
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-}
-
-button {
-    padding: 10px;
-    background-color: #007bff;
+.form input {
+    width: 240px;
+    height: 35px;
+    background: transparent;
+    border-bottom: 1px solid #ff7200;
+    border-top: none;
+    border-right: none;
+    border-left: none;
     color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: Arial, sans-serif;
+}
+
+.form input:focus {
+    outline: none;
+}
+
+::placeholder {
+    color: #ff7200;
+    font-family: Arial, sans-serif;
+}
+
+.button-login {
+    width: 240px;
+    height: 40px;
+    background: #ff7200;
     border: none;
-    border-radius: 4px;
-    font-size: 16px;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
     cursor: pointer;
+    color: #fff;
+    transition: 0.4s ease;
 }
 
-button:hover {
-    background-color: #0056b3;
+.button-login:hover {
+    background: #fff;
+    color: #ff7200;
 }
 
-.error {
-    color: red;
-    margin-top: 10px;
+.button-login a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+
+.form .link {
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+    padding-top: 20px;
     text-align: center;
+    color: #fff;
+}
+
+.form .link a {
+    text-decoration: none;
+    color: #fefbf9;
+}
+
+.liw {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.icon a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.icon ion-icon {
+    color: #fff;
+    font-size: 30px;
+    padding-left: 5px;
+    padding-top: 5px;
+    transition: 0.3s ease;
+}
+
+.icon ion-icon:hover {
+    color: #ff7200;
 }
